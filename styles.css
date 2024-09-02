@@ -1,0 +1,20 @@
+body{
+    background-color: #71d1b1;
+}
+form{
+}
+
+hr{
+    width: 600px;
+    margin: 30px auto;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
