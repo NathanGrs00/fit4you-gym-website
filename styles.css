@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    justify-content: center;
     background: rgb(21,21,147);
     background: linear-gradient(0deg, rgba(21,21,147,1) 35%, rgba(7,213,255,1) 100%);
     background-repeat: no-repeat;
@@ -18,8 +20,16 @@ h1, h2{
     font-weight: bold;
     text-align: center;
     float: left;
+    margin-bottom: 40px;
     color: rgb(21,21,147);
-
+}
+.FillIn{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
 }
 .Button{
     float: left;
