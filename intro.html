@@ -9,12 +9,14 @@
 <body>
     <form>
         <h1>INSCHRIJFFORMULIER FIT4YOU.</h1>
+        <hr>
         <h2>PERSOONLIJKE GEGEVENS</h2>
         <div class="checks">
             <input type="radio" name="Gender" id="Man"> <label for="Man"> Man </label>
             <input type="radio" name="Gender" id="Woman"><label for="Woman"> Vrouw </label>
             <input type="radio" name="Gender" id="Neutral"><label for="Neutral"> Neutraal </label>
         </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
         <div class="Names">
             <label for="FirstName"> Voornaam: </label> <input type="text" class="FillIn" name="FirstName" id="FirstName" placeholder="Voornaam">
         </div>
@@ -31,9 +33,9 @@
             <label for="EstimatedDays"> Geschatte aantal trainingsdagen (per week): </label> <input type="number" class="FillIn" name="EstimatedDays" id="EstimatedDays" min="0" max="7" placeholder="0-7 dagen">
         </div>
         <h2>ADRESGEGEVENS</h2>
-        <br>
+        <br/><br/><br/>
         <div class="PostHome">
-            <label for="PostalCode"> Postcode: </label> <input type="text" class="FillIn" name="PostalCode" id="PostalCode" placeholder="Postcode">
+            <label for="PostalCode" id="PostalCodeLabel"> Postcode: </label> <input type="text" class="FillIn" name="PostalCode" id="PostalCode" placeholder="Postcode">
         </div>
         <div class="PostHome">
             <label for="HomeNumber"> Huisnummer: </label> <input type="text" class="FillIn" name="HomeNumber" id="HomeNumber" placeholder="Huisnummer">
@@ -44,13 +46,11 @@
         <div class="StreetPlace">
             <label for="PlaceOfResidence"> Woonplaats: </label> <input type="text" class="FillIn" name="PlaceOfResidence" id="PlaceOfResidence" placeholder="Woonplaats">
         </div>
-        <div class="checks">
+        <div>
             <input type="checkbox" name="Promotions" id="Promotions"> <label for="Promotions">Ja, ik wil graag promoties en informatie over de producten van Fit4You ontvangen.</label>
         </div>
         <div>
             <input type="submit" value="VERZENDEN" class="Button" name="Send" id="Send">
-        </div>
-        <div>
             <button class="Button" id="BackButton">Terug naar Home</button>
         </div>
     </form>
