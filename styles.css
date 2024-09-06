@@ -23,6 +23,10 @@ h1, h2{
     margin-bottom: 40px;
     color: rgb(21,21,147);
 }
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 .FillIn{
     width: 100%;
     height: 40px;
@@ -43,18 +47,9 @@ h1, h2{
 .checks{
     display: flex;
     float: left;
-    position: relative;
-    vertical-align: middle;
 }
-input{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-input[type="Radio"]{
-    vertical-align: middle;
-}
-#PostalCodeLabel{
-    display: flex;
+.RadioChecks{
+    margin-top: 7px;
 }
 #Promotions{
     float: left;
