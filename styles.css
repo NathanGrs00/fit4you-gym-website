@@ -10,25 +10,14 @@ form{
     box-shadow: 0 0 100px rgba(0,0,0,0.4);
     margin: 20px;
     padding: 20px;
-    min-width: 700px;
+    width: 700px;
 }
-.Button{
-    margin-top: 40px;
-    margin-right: 20px;
-    width: 40%;
-    border-radius: 5px;
-    height: 40px;
+h1 {
+    color: rgb(21, 21, 147);
 }
-h1{
-    color: rgb(21,21,147);
-}
-#Send{
-    color: white;
-    background: rgb(21,21,147);
-    background: linear-gradient(0deg, rgba(21,21,147,1) 35%, rgba(7,213,255,1) 100%);
-}
-#Promotions{
-    margin-top: 20px;
+#FormDiv{
+    display: flex;
+    justify-content: center;
 }
 .FormBox{
     display: grid;
@@ -49,4 +38,22 @@ h1{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
+.Button{
+    margin-top: 40px;
+    margin-right: 23px;
+    width: 45%;
+    border-radius: 5px;
+    height: 40px;
+}
+hr{
+    width: 80%;
+    float: left;
+}
+#Send{
+    color: white;
+    background: rgb(21,21,147);
+    background: linear-gradient(0deg, rgba(21,21,147,1) 35%, rgba(7,213,255,1) 100%);
+}
+#Promotions{
+    margin-top: 20px;
+}
