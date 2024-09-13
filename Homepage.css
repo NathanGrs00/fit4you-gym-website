@@ -14,11 +14,21 @@ hr{
 h1, h3{
     color: rgb(21,21,147);
 }
+h1{
+    text-align: center;
+}
 h3{
     padding-right: 10px;
 }
 p{
     font-size: 17px;
+}
+img{
+    max-width: 500px;
+}
+#ImageDiv{
+    display: flex;
+    justify-content: center;
 }
 .Information{
     background-color: whitesmoke;
@@ -32,12 +42,10 @@ p{
 #BodyContents{
     background-color: white;
     box-shadow: 0 0 100px rgba(0,0,0,0.4);
-    max-width: 500px;
     padding: 20px;
     margin: 20px;
 }
 #Dumbbells{
-    max-width: 500px;
     border-radius: 50px;
 }
 #ToSignUp{

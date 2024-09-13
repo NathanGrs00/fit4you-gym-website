@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>
+        Inschrijven bij Fit4You
+    </title>
+</head>
+<body>
+    <form>
+        <div id="HeaderInfo">
+            <h1>INSCHRIJFFORMULIER FIT4YOU.</h1>
+            <hr>
+            <h2>PERSOONLIJKE GEGEVENS</h2>
+        </div>
+        <div class="checks">
+            <input type="radio" name="Gender" id="Man"> <label for="Man" class="RadioChecks"> Man </label>
+            <input type="radio" name="Gender" id="Woman"> <label for="Woman" class="RadioChecks"> Vrouw </label>
+            <input type="radio" name="Gender" id="Neutral"> <label for="Neutral" class="RadioChecks"> Neutraal </label>
+        </div>
+        <div class="FormBox">
+            <div class="SubBox">
+                <label for="FirstName"> Voornaam: </label> <input type="text" class="FillIn" name="FirstName" id="FirstName" placeholder="Voornaam">
+            </div>
+            <div class="SubBox">
+                <label for="LastName"> Achternaam: </label> <input type="text" class="FillIn" name="LastName" id="LastName" placeholder="Achternaam">
+            </div>
+            <div class="SubBox">
+                <label for="Birthday"> Geboortedatum: </label> <input type="date" class="FillIn" name="Birthday" id="Birthday">
+            </div>
+            <div class="SubBox">
+                <label for="Email"> E-mailadres: </label> <input type="email" class="FillIn" name="Email" id="Email" placeholder="jouw@email.com">
+            </div>
+            <div class="SubBox">
+                <label for="EstimatedDays"> Geschatte aantal trainingsdagen (per week): </label> <input type="number" class="FillIn" name="EstimatedDays" id="EstimatedDays" min="0" max="7" placeholder="0-7 dagen">
+            </div>
+        </div>
+        <h2>ADRESGEGEVENS</h2>
+        <div class="FormBox">
+            <div class="SubBox">
+                <label for="PostalCode"> Postcode: </label> <input type="text" class="FillIn" name="PostalCode" id="PostalCode" placeholder="Postcode">
+            </div>
+            <div class="SubBox">
+                <label for="HomeNumber"> Huisnummer: </label> <input type="text" class="FillIn" name="HomeNumber" id="HomeNumber" placeholder="Huisnummer">
+            </div>
+            <div class="SubBox">
+                <label for="StreetName"> Straatnaam: </label> <input type="text" class="FillIn" name="StreetName" id="StreetName" placeholder="Straatnaam">
+            </div>
+            <div class="SubBox">
+                <label for="PlaceOfResidence"> Woonplaats: </label> <input type="text" class="FillIn" name="PlaceOfResidence" id="PlaceOfResidence" placeholder="Woonplaats">
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" name="Promotions" id="Promotions"> <label for="Promotions">Ja, ik wil graag promoties en informatie over de producten van Fit4You ontvangen.</label>
+        </div>
+        <div id="Buttons">
+            <input type="submit" value="VERZENDEN" class="Button" name="Send" id="Send">
+            <button class="Button" id="BackButton">Terug naar Home</button>
+        </div>
+    </form>
+</body>
+</html>

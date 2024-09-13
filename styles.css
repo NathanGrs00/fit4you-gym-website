@@ -1,63 +1,52 @@
 body{
-    display: flex;
-    justify-content: center;
     background: rgb(21,21,147);
     background: linear-gradient(0deg, rgba(21,21,147,1) 35%, rgba(7,213,255,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
     font-family: sans-serif, Arial, Consolas;
 }
 form{
-    background-color: white;
+    background: white;
     box-shadow: 0 0 100px rgba(0,0,0,0.4);
-    padding: 20px;
     margin: 20px;
-    max-width: 500px;
-    float: left;
-}
-h1, h2{
-    font-weight: bold;
-    text-align: center;
-    float: left;
-    margin-bottom: 40px;
-    color: rgb(21,21,147);
-}
-input {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.FillIn{
-    width: 100%;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 10px black;
+    padding: 20px;
+    min-width: 700px;
 }
 .Button{
-    display: inline-flex;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 0 5px black;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 40%;
+    border-radius: 5px;
+    height: 40px;
 }
-.checks{
-    display: flex;
-    float: left;
-}
-.RadioChecks{
-    margin-top: 7px;
-}
-#Promotions{
-    float: left;
-    margin: 10px;
+h1{
+    color: rgb(21,21,147);
 }
 #Send{
     color: white;
-    font-weight: bold;
     background: rgb(21,21,147);
     background: linear-gradient(0deg, rgba(21,21,147,1) 35%, rgba(7,213,255,1) 100%);
 }
+#Promotions{
+    margin-top: 20px;
+}
+.FormBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    width: 700px;
+}
+.FormBox input{
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+}
+.SubBox {
+    display: inline-grid;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
