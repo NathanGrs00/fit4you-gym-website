@@ -8,16 +8,16 @@
 </head>
 <body>
     <div id="FormDiv">
-        <form action="forminfo.php" method="POST">
+        <form action="forminfo.php" method="POST" id="MainForm">
             <div id="HeaderInfo">
                 <h1>INSCHRIJFFORMULIER FIT4YOU.</h1>
                 <hr>
                 <h2>PERSOONLIJKE GEGEVENS</h2>
             </div>
             <div class="checks">
-                <input type="radio" name="Gender" id="Man"> <label for="Man" class="RadioChecks"> Man </label>
-                <input type="radio" name="Gender" id="Woman"> <label for="Woman" class="RadioChecks"> Vrouw </label>
-                <input type="radio" name="Gender" id="Neutral"> <label for="Neutral" class="RadioChecks"> Neutraal </label>
+                <input type="radio" name="Gender" id="Man" value="Man"> <label for="Man" class="RadioChecks"> Man </label>
+                <input type="radio" name="Gender" id="Woman" value="Vrouw"> <label for="Woman" class="RadioChecks"> Vrouw </label>
+                <input type="radio" name="Gender" id="Neutral" value="Neutraal"> <label for="Neutral" class="RadioChecks"> Neutraal </label>
             </div>
             <div class="FormBox">
                 <div class="SubBox">
@@ -55,11 +55,17 @@
                 <input type="checkbox" name="Promotions" id="Promotions"> <label for="Promotions">Ja, ik wil graag promoties en informatie over de producten van Fit4You ontvangen.</label>
             </div>
             <div id="Buttons">
-                <input type="submit" value="VERZENDEN" class="Button" name="submit" id="Send">
-                <a href="index.html">
-                    <button class="Button" id="BackButton">Terug naar Home</button>
-                </a>
+                <input type="submit" value="VERZENDEN" class="Button" name="Submit" id="Send">
+                <input type="button" class="Button" id="BackButton" value="Terug naar Home" onclick="location.href='index.html'">
             </div>
+        </form>
+    </div>
+    <div id="SideBar">
+        <h4>Admin tools:</h4>
+        <form action="forminfo.php" method="POST" id="SideForm">
+            <input type="submit" value="Aantal leden" name="MembersCount" onclick="location.href='forminfo.php'">
+            <input type="submit" value="Overzicht leden" name="MembersSum" onclick="location.href='forminfo.php'">
+            <input type="submit" value="Leden Wissen" name="MembersDel" onclick="location.href='forminfo.php'">
         </form>
     </div>
 </body>
