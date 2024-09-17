@@ -7,6 +7,9 @@ if(!isset($_SESSION["users"])){
 if (isset($_POST["MembersDel"])){
     if($_POST["MembersDel"]){
         session_destroy();
+        echo "De leden zijn succesvol verwijderd. <br/>";
+        echo "<a href='index.html'>Terug</a>";
+        exit();
     }
 }
 // Shows the amount of member(s) if the button is pressed for it.
@@ -19,7 +22,7 @@ if (isset($_POST["MembersCount"])){
         else{
             echo "Er zijn ",$userCount, " leden aangemeld.<br/>";
         }
-        echo "<a href='inschrijfform.html'>Terug</a>";
+        echo "<a href='index.html'>Terug</a>";
         exit();
     }
 }

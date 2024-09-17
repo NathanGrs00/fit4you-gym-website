@@ -33,7 +33,7 @@
                     <label for="Email"> E-mailadres: </label> <input type="email" class="FillIn" name="Email" id="Email" placeholder="jouw@email.com">
                 </div>
                 <div class="SubBox">
-                    <label for="EstimatedDays"> Geschatte aantal trainingsdagen (per week): </label> <input type="number" class="FillIn" name="EstimatedDays" id="EstimatedDays" min="0" max="7" placeholder="0-7 dagen">
+                    <label for="EstimatedDays"> Geschatte aantal trainingsdagen (per week): </label> <input type="number" class="FillIn" name="EstimatedDays" id="EstimatedDays" min="0" max="7" onkeyup="if(this.value > 7) this.value = null;" placeholder="0-7 dagen">
                 </div>
             </div>
             <h2>ADRESGEGEVENS</h2>

@@ -10,7 +10,7 @@
         <h1>Welkom bij sportschool Fit4You!</h1>
         <hr>
         <div id="ImageDiv">
-            <img src="StockPhotoGym1.jpg" id="Dumbbells">
+            <img src="StockPhotoGym1.jpg" alt="Stock Photo of Dumbbells" id="Dumbbells">
         </div>
         <hr>
         <h2>Vind onze club!</h2>
@@ -28,16 +28,22 @@
         </div>
         <hr>
         <p>
-            Fit4You is de sportschool waar iedereen zich thuis voelt! <br/>
-            Of je nou aan krachttraining, duursport, of allebei doet, Fit4You is de plek waar jij altijd je gang kan gaan. <br/>
+            Fit4You is de sportschool waar iedereen zich thuis voelt! <br>
+            Of je nou aan krachttraining, duursport, of allebei doet, Fit4You is de plek waar jij altijd je gang kan gaan. <br>
             Met onze drie personal trainers, is er altijd iemand die je kan begeleiden.
-            <br/><br/>
+            <br><br>
             Meld je nu aan en betaal de eerste drie maanden de helft van het tarief en krijg een gratis sporttas cadeau!
         </p>
         <div>
-            <a href="inschrijfform.html">
-                <button id="ToSignUp">Schrijf je nu in!</button>
-            </a>
+            <input type="button" id="ToSignUp" value="Schrijf je nu in!" onclick="location.href='inschrijfform.html'">
+        </div>
+        <div id="SideBar">
+            <h4>Admin tools:</h4>
+            <form action="forminfo.php" method="POST" id="SideForm">
+                <input type="submit" value="Aantal leden" name="MembersCount" onclick="location.href='forminfo.php'">
+                <input type="submit" value="Overzicht leden" name="MembersSum" onclick="location.href='forminfo.php'">
+                <input type="submit" value="Leden Wissen" name="MembersDel" onclick="location.href='forminfo.php'">
+            </form>
         </div>
     </div>
 </body>
