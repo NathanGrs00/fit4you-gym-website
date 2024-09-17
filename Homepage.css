@@ -7,30 +7,13 @@ body{
     background-attachment: fixed;
     font-family: sans-serif, Arial, Consolas;
 }
-hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
+#BodyContents{
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0,0,0,0.4);
+    margin: 20px;
+    padding: 20px;
 }
-h1, h3{
-    color: rgb(21,21,147);
-}
-h1{
-    text-align: center;
-}
-h3{
-    padding-right: 10px;
-}
-p{
-    font-size: 17px;
-}
-img{
-    max-width: 500px;
-}
-#ImageDiv{
-    display: flex;
-    justify-content: center;
-}
-.Information{
+#BodyContents > .Information{
     display: inline-flex;
     align-items: center;
     background-color: whitesmoke;
@@ -39,15 +22,30 @@ img{
     margin: 5px;
     padding: 7px;
 }
-#BodyContents{
-    background-color: white;
-    box-shadow: 0 0 100px rgba(0,0,0,0.4);
-    margin: 20px;
-    padding: 20px;
+#BodyContents > hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-#Dumbbells{
+#BodyContents > h1, h3{
+    color: rgb(21,21,147);
+}
+#BodyContents > h1{
+    text-align: center;
+}
+#BodyContents > .Information > h3{
+    padding-right: 10px;
+}
+#BodyContents > p{
+    font-size: 17px;
+}
+#BodyContents > #ImageDiv{
+    display: flex;
+    justify-content: center;
+}
+#BodyContents > #ImageDiv > img{
+    max-width: 500px;
     border-radius: 50px;
-}
+ }
 #ToSignUp{
     font-size: x-large;
     margin-top: 10px;
