@@ -84,7 +84,7 @@ if (isset($_POST["MembersSum"])){
                     case "last_name":
                         echo "Achternaam: ", $value, "<br/>";
                         break;
-                    // Formatting the birthday from yyyy/mm/dd to reversed.
+                    // Formatting the birthday from yyyy/mm/dd to reversed format.
                     case "birthday":
                         $date = DateTime::createFromFormat('Y-m-d', $value);
                         echo "Geboortedatum: ", $date->format('d/m/Y'), "<br>";
