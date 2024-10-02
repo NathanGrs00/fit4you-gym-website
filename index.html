@@ -35,14 +35,14 @@
             Meld je nu aan en betaal de eerste drie maanden de helft van het tarief en krijg een gratis sporttas cadeau!
         </p>
         <div>
-            <input type="button" id="ToSignUp" value="Schrijf je nu in!" onclick="location.href='inschrijfform.html'">
+            <input type="button" id="ToSignUp" value="Schrijf je nu in!" onclick="location.href='signupform.html'">
         </div>
         <div id="SideBar">
             <h4>Admin tools:</h4>
-            <form action="forminfo.php" method="POST" id="SideForm">
-                <input type="submit" value="Aantal leden" name="MembersCount" onclick="location.href='forminfo.php'">
-                <input type="submit" value="Overzicht leden" name="MembersSum" onclick="location.href='forminfo.php'">
-                <input type="submit" value="Leden Wissen" name="MembersDel" onclick="location.href='forminfo.php'">
+            <form action="Main.php" method="POST" id="SideForm">
+                <input type="submit" value="Aantal leden" class="AdminButtons" name="MembersCount" onclick="location.href='index.php'">
+                <input type="submit" value="Overzicht leden" class="AdminButtons" name="MembersSum" onclick="location.href='index.php'">
+                <input type="submit" value="Leden Wissen" class="AdminButtons" name="MembersDel" onclick="location.href='index.php'">
             </form>
         </div>
     </div>

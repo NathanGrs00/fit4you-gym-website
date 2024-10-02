@@ -56,3 +56,9 @@ body{
     background: linear-gradient(0deg, rgba(21,21,147,1) 35%, rgba(7,213,255,1) 100%);
     color: white;
 }
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 5px;
+    background: whitesmoke;
+    box-shadow: 0 0 100px rgba(0,0,0,0.4);
+}
