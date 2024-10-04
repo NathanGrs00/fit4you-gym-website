@@ -1,3 +1,13 @@
+<?php
+// require_once used to access the class file.
+require_once 'member.php';
+session_start();
+
+// Makes an empty array if none exist yet.
+if(!isset($_SESSION["users"])){
+    $_SESSION["users"] = array();
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,15 +18,6 @@
 <body>
     <div id="MainContent">
         <?php
-        // require_once used to access the class file.
-        require_once 'member.php';
-        session_start();
-
-        // Makes an empty array if none exist yet.
-        if(!isset($_SESSION["users"])){
-            $_SESSION["users"] = array();
-        }
-
         // Deletes members / Destroys the session.
         if (isset($_POST["MembersDel"])){
             if($_POST["MembersDel"]){
