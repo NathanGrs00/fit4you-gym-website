@@ -2,6 +2,8 @@
 
 This is a small webapplication for a fictional Dutch gym that can track gym members and show them.
 
+![Image](https://github.com/user-attachments/assets/2e72b701-7f68-4f95-9b35-2fb0ff4ce9ac)
+
 ## Getting Started
 
 Because this is not a live website, it can only be hosted locally through for example XAMPP.
